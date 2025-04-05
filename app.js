@@ -1,5 +1,5 @@
 // Import the createClient function from the Supabase library
-const { createClient } = supabase;
+const { createClient } = require('@supabase/supabase-js');
 
 // Use environment variables for Supabase URL and Anon Key
 const supabaseUrl = process.env.SUPABASE_URL;
