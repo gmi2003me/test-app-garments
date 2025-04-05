@@ -1,3 +1,4 @@
+// Ensure the supabase client is created before any other code
 const { createClient } = supabase;
 
 // Use environment variables for Supabase URL and Anon Key
