@@ -1,9 +1,11 @@
-// Ensure the supabase client is created before any other code
+// Import the createClient function from the Supabase library
 const { createClient } = supabase;
 
 // Use environment variables for Supabase URL and Anon Key
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+
+// Initialize the Supabase client
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 document.addEventListener('DOMContentLoaded', async () => {
