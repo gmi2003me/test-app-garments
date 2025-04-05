@@ -1,9 +1,9 @@
-// Import the createClient function from the Supabase library
-const { createClient } = require('@supabase/supabase-js');
+// Import the createClient function from the Supabase library using ES module syntax
+import { createClient } from '@supabase/supabase-js';
 
 // Use environment variables for Supabase URL and Anon Key
-const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL; // Access the environment variable
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY; // Access the environment variable
 
 // Initialize the Supabase client
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
