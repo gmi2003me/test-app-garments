@@ -18,9 +18,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script>
-        // Embed environment variables from Vercel
-        window.supabaseUrl = 'YOUR_SUPABASE_URL'; // Replace with your actual Supabase URL
-        window.supabaseAnonKey = 'YOUR_SUPABASE_ANON_KEY'; // Replace with your actual Supabase Anon Key
+        // Access environment variables from Vercel
+        window.supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL; // This will be replaced with the actual value in Vercel
+        window.supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY; // This will be replaced with the actual value in Vercel
     </script>
     <script type="module" src="app.js"></script>
 </body>
