@@ -1,5 +1,5 @@
 // Initialize the Supabase client using the embedded environment variables
-const supabase = createClient(window.supabaseUrl, window.supabaseAnonKey);
+const supabase = supabase.createClient(window.supabaseUrl, window.supabaseAnonKey);
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadDropdowns();
