@@ -1,12 +1,5 @@
-// Import the createClient function from the Supabase library using ES module syntax
-import { createClient } from '@supabase/supabase-js';
-
-// Use environment variables for Supabase URL and Anon Key
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL; // Access the environment variable
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY; // Access the environment variable
-
-// Initialize the Supabase client
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Initialize the Supabase client using the embedded environment variables
+const supabase = createClient(window.supabaseUrl, window.supabaseAnonKey);
 
 document.addEventListener('DOMContentLoaded', async () => {
     await loadDropdowns();
